@@ -130,6 +130,14 @@ Current Date: Saturday 03 February 2024 08:58:36 PM IST
 brijesh@brijesh-Inspiron-5567:~/Home/MyFiles$ 
 ```
 ### Question 11- Edit the Bash startup script (e.g., .bashrc) to set an environment variable named "CUSTOM_PATH" to a specific directory path. Ensure the variable is available in new shell sessions.
+```
+brijesh-Inspiron-5567:~/Home/MyFiles/Documents$ vim ~/.bash_profile root@:brijesh-Inspiron-5567/Home/MyFiles/Documents# cat ~/.bash_profile export CUSTOM_PATH="/Home/MyFiles"
+6 files to edit
+brijesh@brijesh-Inspiron-5567:~/Home/MyFiles/Documents$ source ~/.bash_profile
+brijesh@brijesh-Inspiron-5567:~/Home/MyFiles/Documents$ echo $CUSTOM_PATH
+/Home/Myfiles
+brijesh@brijesh-Inspiron-5567:~/Home/MyFiles/Documents$ 
+```
 
 ### Question 12- Use the echo command to add a new line of text to the "my_notes.txt" file without overwriting existing content. Verify that the new text is appended.
 ```
