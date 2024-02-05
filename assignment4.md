@@ -264,8 +264,12 @@ brijesh@brijesh-Inspiron-5567:~$
 
 ### Question 20- Delete the user account "john_doe" and ensure that their home directory is also removed.
 ```
-brijesh@brijesh-Inspiron-5567:~$ sudo userdel -r john_doe
-userdel: john_doe mail spool (/var/mail/john_doe) not found
+brijesh@brijesh-Inspiron-5567:~$ sudo deluser --remove-home john_doe
+Looking for files to backup/remove ...
+Removing user `john_doe' ...
+Warning: group `john_doe' has no more members.
+userdel: user john_doe is currently used by process 3946
+/usr/sbin/deluser: `/sbin/userdel john_doe' returned error code 8. Exiting.
 brijesh@brijesh-Inspiron-5567:~$ 
 ```
 ### Question 21- Delete the group "development_team" and ensure that all users previously belonging to the group are appropriately handled.
