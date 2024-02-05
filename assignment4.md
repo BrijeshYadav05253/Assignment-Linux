@@ -222,7 +222,11 @@ brijesh@brijesh-Inspiron-5567:~$
 
 ### Question 16- Add the user "john_doe" to the sudoers file, allowing them superuser privileges. Confirm that "john_doe" can execute commands with sudo.
 ```
-
+brijesh@brijesh-Inspiron-5567:~$ sudo visudo
+[sudo] password for brijesh: 
+brijesh@brijesh-Inspiron-5567:~$ su john_doe
+Password: 
+john_doe@brijesh-Inspiron-5567:/home/brijesh$ 
 ```
 ### Question 17- Modify the user account "john_doe" to change the default shell to "/bin/bash" and set the account's expiration date to one month from today.
 ```
